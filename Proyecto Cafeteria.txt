@@ -1,0 +1,22 @@
+Pagina principal
+
+blog de cafe de cafe de capsula
+
+publicacion de productos
+
+1 pagina default(quienes somos, donde estamos, carrusel de productos, novedades, opiniones de usuarios)
+
+- login
+- nav
+
+-footer
+
+2 login
+
+3 carrito (pagina y ventan de carrito)
+
+
+
+pagina principal
+pagina de venta de productos (,)
+carrito
