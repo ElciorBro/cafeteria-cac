@@ -20,13 +20,20 @@
 }
 
 .info-section {
-    background-color: #726019;
+    background-color: #44390f;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    max-height: 30px;
+    align-items: start;
+    height: 25px;
+}
+
+.info-section p {
+    color: #ffffff;
+}
+
+.info-section a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .navbar-section {
@@ -57,24 +64,32 @@
     background-color: #815e19;
 }
 
+.nav-item:hover .nav-link {
+    color: #ffffff;
+    text-decoration: overline;
+}
+
 .nav-item a.nav-link {
     /* background-color: #b7981b; */
     color: #1f1f1f;
     font-weight: bold;
-    /* transition: all 0.25s ease; */
+    transition: all 1s ease;
 }
 
 
 /* Hero Section */
 
 .hero {
-    background-color: #b7981b;
     padding-bottom:30px;
+    background-image: url('https://i.ibb.co/MSdybbR/hero-background.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
-.carrusel-container {
+/* .carrusel-container {
     border: 2px solid #1f1f1f;
-}
+} */
 
 .img-carrusel {
     max-height: 300px;
@@ -87,14 +102,21 @@
     padding: 10px 0 30px 0;
 }
 
-.hero-principal h1 {
+.hero-principal h1, .hero-principal h2 {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.927);
+    /* color: black; */
+    /* text-shadow: 0 0 5px white; */
     margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .descripcion {
     margin: 25px 40px;
-    padding: 25px 20px;
+    padding: 15px 10px;
     border-radius: 10px;
+    opacity: 0.85;
 }
 
 .descripcion p {
@@ -104,6 +126,8 @@
 
 .descripcion img {
     border-radius: 50px;
+    height: 200px;
+    opacity: 0.8;
 }
 
 
@@ -190,13 +214,18 @@
 .news-container {
     border: 3px solid #24201c99;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 40px;
+}
+
+.user-container {
+    padding: 20px;
 }
 
 .user-card {
     margin: 5px 10px;
     border: 2px solid #24201c99;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 12px 12px;
+    width: 20rem;
+    height: 11rem;
 }
