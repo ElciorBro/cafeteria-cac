@@ -216,7 +216,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .card img {
@@ -232,6 +231,26 @@ body {
     padding: 0;
 }
 
+.btn-custom {
+    background-color: transparent;
+    border: 2px solid #333; 
+    color: #333;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-custom:active {
+    background-color: #ccc; 
+}
+
 .frase {
     color: #c5c5c5;
     padding: 15px;
@@ -244,7 +263,7 @@ body {
 
 .news-user-container {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .custom-carousel-container {
@@ -257,6 +276,10 @@ body {
     background-color: #1f1f1f;
     border-radius: 10px;
     border: 2px solid #1f1f1f;
+    box-shadow: 
+        0px 4px 10px rgba(0, 0, 0, 0.4),
+        0px 8px 20px rgba(0, 0, 0, 0.4),
+        0px 16px 40px rgba(0, 0, 0, 0.3);
 }
 
 .news-container {
@@ -285,6 +308,16 @@ body {
 
 /* Footer - pie de pagina */
 
+footer {
+    background-image: linear-gradient(to right, #634706, #613b21);
+    color: white;
+    padding: 20px 0;
+}
+
+.contact {
+    padding: 15px 5px 10px 15px;
+}
+
 .logo-image img {
     height: 5rem;
     width: 5rem;
@@ -294,6 +327,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.redes-container {
+    display: flex;
 }
 
 .redes-sociales a {
