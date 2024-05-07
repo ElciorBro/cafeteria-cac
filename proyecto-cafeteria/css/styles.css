@@ -17,10 +17,20 @@ body {
 /* Barra Header */
 .header-section {
     border: 1px solid #1f1f1f;
+    /* background-color: #c5c5c5; */
+
 }
 
 .logo-section {
     background-color: #c5c5c5;
+    overflow: hidden;
+    position: relative;
+    border-right: 2px solid #1f1f1fb1;
+}
+
+
+.logo {
+
 }
 
 .info-section {
@@ -42,6 +52,7 @@ body {
 
 .navbar-section {
     background-color:#faebb0;
+    /* transform: skewX(-20deg); */
 }
 
 .telefono, .correo {
@@ -294,7 +305,7 @@ body {
 }
 
 .user-container {
-    padding: 20px;
+    padding: 30px 10px;
 }
 
 .user-card {
@@ -304,6 +315,10 @@ body {
     padding: 12px 12px;
     width: 20rem;
     height: 11rem;
+}
+
+.news-img {
+    height: 20rem;
 }
 
 /* Footer - pie de pagina */
