@@ -108,7 +108,7 @@
 			</div>
 			
 			<div class="hero-inferior">
-				<div class="descripcion seccion-oscura d-flex flex-row justify-content-center align-items-center">
+				<div class="descripcion container seccion-oscura d-flex flex-row justify-content-center align-items-center">
 					<p class="text-decripcion">
 						La alegria de encontrar gente como vos, amante al cafe que comparte su experiencia <br> Viví la experiencia de amar nuestros productos <br>
 						Las mejores recetas las podes vivir aquí con nosotros, porque este es tu lugar por excelencia <br> Sentite como en tu casa, porque somos tu familia F-Cafe
@@ -153,10 +153,10 @@
 	</section>
 
 	<!-- carrusel productos -->
-	<section class="seccion-oscura">
+	<section class="product-section container-fluid">
 		<div class="container-fluid p-0 m-0">
 			<div class="row">
-				<main class="col-12 col-md-9">
+				<main class="col-12 col-md-8">
 					<!-- Carrusel de productos -->
 					<!-- espresso https://i.ibb.co/1mJjjM1/expreso.jpg -->
 					<!-- capuchino https://i.ibb.co/HHyT8J4/capuchino.webp -->
@@ -167,7 +167,7 @@
 							<div class="carousel-item active">
 								<div class="product-container">
 									<!-- card 1 -->
-									<div class="card" style="width: 18rem;">
+									<div class="card">
 										<img src="https://i.ibb.co/1mJjjM1/expreso.jpg" class="card-img-top" alt="cafe expresso">
 										<div class="card-body">
 											<h5 class="card-title">Cafe Expreso</h5>
@@ -177,7 +177,7 @@
 									</div>
 
 									<!-- card 2 -->
-									<div class="card" style="width: 18rem;">
+									<div class="card">
 										<img src="https://i.ibb.co/HHyT8J4/capuchino.webp" class="card-img-top" alt="Cafe Capuchino">
 										<div class="card-body">
 											<h5 class="card-title">Cafe Capuchino</h5>
@@ -221,8 +221,8 @@
 						</button>
 					</div>
 				</main>
-				<aside class="col-12 col-md-3 product-aside">
-					<div class="">
+				<aside class="col-12 col-md-4 product-aside">
+					<div class="frase">
 						"La magia de nuestros productos parte un poco de la calidad del café <br>
 						Y otra buena parte nace de nuestra pasion por el café"
 					</div>
@@ -234,122 +234,138 @@
 	<!-- seccion Novedades / opiniones -->
 	<section class="news-user-container seccion-clara">
 		<div class="container-fluid">
-			<div class="row">
+			<!-- presentacion -->
+			<div class="row d-flex flex-column">
 				<h1 class="text-center">Seccion de Novedades</h1>
+				<h3 class="text-center">Conoce nuestros ultimos articulos y los ultimos comentarios de los usuarios</h3>
 			</div>
 
-			<!-- Ultima noticias -->
-			<div class="news-container d-flex justify-content-center align-items-center">
-				<!-- Ultima noticias -->
-				<main class="d-flex flex-column justify-content-center align-items-center">
-					<h1 class="news-title">Nueva Sede en Construccion</h1>
-					<h3 class="news-subtitle">Seguimos expandiendonos para una mejor experiencia</h3>
-					<p class="news-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi optio architecto suscipit officia distinctio quia? Molestias id nulla eaque quibusdam natus quam nihil recusandae. Ex id libero quasi voluptates nostrum.</p>
-					<img src="https://i.ibb.co/pzBJJz3/pngtree-3d-coffee-shop-exterior-picture-image-2761239.png" alt="proyecto de cafeteria">
-					<p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor est, voluptates nihil qui explicabo aliquam, fugiat, totam consequuntur fugit obcaecati! Molestias similique porro velit non perspiciatis, maiores commodi quidem.</p>
-				</main>
+			<!-- carrusel noticias vertical -->
+			<div class="custom-carousel-container container">				
+				<!-- item noticias -->
+				<div class="news-container d-flex justify-content-center align-items-center">
+					<!-- Ultima noticias -->
+					<main class="d-flex flex-column justify-content-center align-items-center">
+						<h1 class="news-title">Nueva Sede en Construccion</h1>
+						<h3 class="news-subtitle">Seguimos expandiendonos para una mejor experiencia</h3>
+						<p class="news-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi optio architecto suscipit officia distinctio quia? Molestias id nulla eaque quibusdam natus quam nihil recusandae. Ex id libero quasi voluptates nostrum.</p>
+						<img class="news-img" src="https://i.ibb.co/pzBJJz3/pngtree-3d-coffee-shop-exterior-picture-image-2761239.png" alt="proyecto de cafeteria">
+						<p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor est, voluptates nihil qui explicabo aliquam, fugiat, totam consequuntur fugit obcaecati! Molestias similique porro velit non perspiciatis, maiores commodi quidem.</p>
+					</main>
 
-				<aside class="user-container d-flex flex-column justify-content-center align-items-center">
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente1.svg" alt="">
-							<p class="user-name ms-3"><strong>Carlos Ignacio</strong></p>
+					<aside class="user-container d-flex flex-column justify-content-center align-items-center">
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente1.svg" alt="">
+								<p class="user-name ms-3"><strong>Carlos Ignacio</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
 						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
 
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente2.svg" alt="">
-							<p class="user-name ms-3"><strong>Maria Jose</strong></p>
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente2.svg" alt="">
+								<p class="user-name ms-3"><strong>Maria Jose</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
 						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
 
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente3.svg" alt="">
-							<p class="user-name ms-3"><strong>Esteban Acuña</strong></p>
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente3.svg" alt="">
+								<p class="user-name ms-3"><strong>Esteban Acuña</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
 						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
-				</aside>
-			</div>
-
-			<div class="row news-container">
-				<div class="news-container col-12 col-md-8 d-flex flex-column justify-content-center align-items-center">
-					<h1 class="news-title">Nueva Sede en Construccion</h1>
-					<h3 class="news-subtitle">Seguimos expandiendonos para una mejor experiencia</h3>
-					<p class="news-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi optio architecto suscipit officia distinctio quia? Molestias id nulla eaque quibusdam natus quam nihil recusandae. Ex id libero quasi voluptates nostrum.</p>
-					<img src="https://i.ibb.co/pzBJJz3/pngtree-3d-coffee-shop-exterior-picture-image-2761239.png" alt="proyecto de cafeteria">
-					<p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor est, voluptates nihil qui explicabo aliquam, fugiat, totam consequuntur fugit obcaecati! Molestias similique porro velit non perspiciatis, maiores commodi quidem.</p>
+					</aside>
 				</div>
-				<aside class="user-container col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente1.svg" alt="">
-							<p class="user-name ms-3"><strong>Carlos Ignacio</strong></p>
-						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
 
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente2.svg" alt="">
-							<p class="user-name ms-3"><strong>Maria Jose</strong></p>
-						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
+				<!-- item noticias -->
+				<div class="news-container d-flex justify-content-center align-items-center">
+					<!-- Ultima noticias -->
+					<main class="d-flex flex-column justify-content-center align-items-center">
+						<h1 class="news-title">Nueva Sede en Construccion</h1>
+						<h3 class="news-subtitle">Seguimos expandiendonos para una mejor experiencia</h3>
+						<p class="news-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi optio architecto suscipit officia distinctio quia? Molestias id nulla eaque quibusdam natus quam nihil recusandae. Ex id libero quasi voluptates nostrum.</p>
+						<img src="https://i.ibb.co/pzBJJz3/pngtree-3d-coffee-shop-exterior-picture-image-2761239.png" alt="proyecto de cafeteria">
+						<p class="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor est, voluptates nihil qui explicabo aliquam, fugiat, totam consequuntur fugit obcaecati! Molestias similique porro velit non perspiciatis, maiores commodi quidem.</p>
+					</main>
 
-					<!-- user coments -->
-					<div class="user-card">
-						<div class="user-profile d-flex align-items-center">
-							<img class="user-img rounded-circle" src="images/cliente3.svg" alt="">
-							<p class="user-name ms-3"><strong>Esteban Acuña</strong></p>
+					<aside class="user-container d-flex flex-column justify-content-center align-items-center">
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente1.svg" alt="">
+								<p class="user-name ms-3"><strong>Carlos Ignacio</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
 						</div>
-						<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
-					</div>
-				</aside>
+
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente2.svg" alt="">
+								<p class="user-name ms-3"><strong>Maria Jose</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
+						</div>
+
+						<!-- user coments -->
+						<div class="user-card">
+							<div class="user-profile d-flex align-items-center">
+								<img class="user-img rounded-circle" src="images/cliente3.svg" alt="">
+								<p class="user-name ms-3"><strong>Esteban Acuña</strong></p>
+							</div>
+							<p class="user-coment mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit. Facilis fugiat, cumque obcaecati ullam vitae nesciunt quidem eligendi expedita!</p>
+						</div>
+					</aside>
+				</div>
+
 			</div>
 		</div>
 	</section>
 
 	<footer class="seccion-oscura">
-		<div class="container">
-			<div class="row">
+		<div class="container-fluid">
+			<!-- <div class="row">
 				<div class="footer-title">
 					<h1>Somos Familia F-CAFE</h1>
 					<h3>Solo nos inspira el café</h3>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="row">
 				<div class="contact col-12 col-md-4">
+					<div class="footer-title">
+						<h1>Somos Familia F-CAFE</h1>
+						<h3>Solo nos inspira el café</h3>
+					</div>
 					<p class="telefono">11-1234-123456</p>
 					<p class="correo">cafeteria_prueba@gmail.com</p>
 					<p class="direccion">Avenida Siempre Viva 742</p>
 				</div>
-				<div class="logo-image col-12 col-md-4">
+				<div class="logo-image col-12 col-md-4 d-flex justify-content-center align-items-center">
 					<img src="https://i.ibb.co/QfqBYDG/icono.png" alt="">
 				</div>
 				<div class="redes-sociales col-12 col-md-4">
-					<a href="" target="_blank" rel="noopener noreferrer">
-						<i class="bi bi-twitter"></i> 
-					</a>
-					<a href="" target="_blank" rel="noopener noreferrer">
-						<i class="bi bi-facebook"></i> 
-					</a>
-					<a href="" target="_blank" rel="noopener noreferrer">
-						<i class="bi bi-linkedin"></i> 
-					</a>
-					<a href="" target="_blank" rel="noopener noreferrer">
-						<i class="bi bi-instagram"></i> 
-					</a>
+					<h2>Nuestras Redes Sociales</h2>
+					<div class="redes-container">
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-twitter"></i> 
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-facebook"></i> 
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-linkedin"></i> 
+						</a>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-instagram"></i> 
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
