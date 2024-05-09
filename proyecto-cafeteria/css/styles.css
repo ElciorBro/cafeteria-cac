@@ -12,12 +12,25 @@ body {
     animation: fade-out 1s ease-in-out forwards;
 }
 
+.animacion-init {
+    animation: fade-init 1.5s ease-in-out forwards;
+}
+
 .aparecer {
     animation: aparecer 1s ease-in-out forwards;
 }
 
 .desaparecer{
     animation: desaparecer 1s ease-in-out forwards;
+}
+
+@keyframes fade-init {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 0.85;
+      }
 }
   
 @keyframes fade-in {
@@ -186,10 +199,10 @@ body {
 }
 
 .descripcion {
+    opacity: 0;
     margin: 25px 50px;
     padding: 15px 10px;
     border-radius: 10px;
-    opacity: 0.85;
 }
 
 .descripcion p {
