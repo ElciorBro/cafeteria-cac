@@ -15,17 +15,17 @@ window.addEventListener('scroll', function() {
 
 // funcion para frase
 
-// window.addEventListener('scroll', function() {
-//     var divFrase = document.getElementById('frase');
-//     var divFrasePos = divFrase.getBoundingClientRect().top;
-//     var screenHeight = window.innerHeight;
+window.addEventListener('scroll', function() {
+    var divFrase = document.getElementById('frase');
+    var divFrasePos = divFrase.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
 
-//     if (divFrasePos < screenHeight *0.75) {
-//         divFrase.classList.add('aparecer');
-//         divFrase.classList.remove('desaparecer');
-//     } else {
-//         divFrase.classList.remove('aparecer');
-//         divFrase.classList.add('desaparecer');
-//     }
-// })
+    if (divFrasePos < screenHeight *0.75) {
+        divFrase.classList.add('aparecer');
+        divFrase.classList.remove('desaparecer');
+    } else {
+        divFrase.classList.remove('aparecer');
+        divFrase.classList.add('desaparecer');
+    }
+})
 
