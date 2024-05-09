@@ -2,6 +2,60 @@ body {
     background-color: #ececec;
 }
 
+/* Animaciones */
+
+.animacion-in {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.animacion-out {
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+.aparecer {
+    animation: aparecer 1s ease-in-out forwards;
+}
+
+.desaparecer{
+    animation: desaparecer 1s ease-in-out forwards;
+}
+  
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    from {
+      width: 0;
+    }
+    to {
+      width: fit-content;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        width: fit-content;
+    } 
+    to {
+        width: 0;
+    }
+}
+
 /* estilo general */
 
 .seccion-oscura {
@@ -102,9 +156,9 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .carrusel-container {
-    border: 2px solid #1f1f1f;
-} */
+.principal-content {
+    opacity: 0;
+}
 
 .img-carrusel {
     max-height: 300px;
@@ -263,6 +317,9 @@ body {
 }
 
 .frase {
+    width: fit-content;
+    /* white-space: nowrap; */
+    overflow: hidden;
     color: #c5c5c5;
     padding: 15px;
     font-size: 1.2rem;
